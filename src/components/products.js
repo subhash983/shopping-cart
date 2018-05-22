@@ -10,6 +10,14 @@ class Products extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.addToCart = this.addToCart.bind(this);
+        this.state = {
+            cartCount: props.cart.length
+        }
+    }
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.cart.length != this.props.cart.length) {
+            this.setState({cartCount: nextProps.cart.length});
+        }
     }
 
     render() {
@@ -21,6 +29,7 @@ class Products extends React.Component {
             <div>
                 <header>
                     <div>
+                        <span>cart count:{this.state.cartCount}</span>
                         <h2>All Items</h2>
                         {this.props.cart.length > 0
                             ? <Link className="goToCart" to="cart">Go to Cart({this.props.cart.reduce((a, b) => {

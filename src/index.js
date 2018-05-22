@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import configureStore from './store/configureStore';
 import {HashRouter, Route} from 'react-router-dom';
 import getProducts from './actions';
+import Header from './components/header';
 
 const persistedState = localStorage.getItem('reduxState')
     ? JSON.parse(localStorage.getItem('reduxState'))
@@ -22,6 +23,7 @@ ReactDOM.render(
         <div>
             <Route exact path='/' component={Products}/>
             <Route exact path='/cart' component={Cart}/>
+            <Route exact path='/hoc' component={Header} />
         </div>
     </HashRouter>
 </Provider>, document.getElementById('app'));
