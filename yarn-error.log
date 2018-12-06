@@ -1,0 +1,73 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add CircularDependencyPlugin
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Users\SUBHASH\Anaconda3;C:\Users\SUBHASH\Anaconda3\Scripts;C:\Users\SUBHASH\Anaconda3\Library\bin;C:\Users\SUBHASH\AppData\Local\Microsoft\WindowsApps;C:\Users\SUBHASH\AppData\Local\atom\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\SUBHASH\AppData\Roaming\npm;C:\Users\SUBHASH\AppData\Local\Yarn\bin;C:\Users\SUBHASH\AppData\Local\Android\sdk\platform-tools
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/CircularDependencyPlugin: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65656:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:134675:22)
+      at Request.emit (events.js:160:13)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:135658:10)
+      at Request.emit (events.js:160:13)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:135578:12)
+      at Object.onceWrapper (events.js:255:19)
+      at IncomingMessage.emit (events.js:165:20)
+      at endReadableNT (_stream_readable.js:1101:12)
+      at process._tickCallback (internal/process/next_tick.js:152:19)
+
+npm manifest: 
+  {
+    "name": "shopping-cart",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "webpack": "webpack  --config webpack.config.js --watch"
+    },
+    "author": "Subhash Jha",
+    "license": "ISC",
+    "dependencies": {
+      "babel": "^6.23.0",
+      "babel-core": "^6.26.0",
+      "babel-loader": "^7.1.2",
+      "babel-preset-react": "^6.24.1",
+      "css-loader": "^0.28.9",
+      "express": "^4.16.2",
+      "path": "^0.12.7",
+      "prop-types": "^15.6.0",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-redux": "^5.0.7",
+      "react-router": "^4.2.0",
+      "react-router-dom": "^4.2.2",
+      "redux": "^3.7.2",
+      "redux-thunk": "^2.2.0",
+      "style-loader": "^0.19.1",
+      "toastr": "^2.1.4",
+      "url-loader": "^0.6.2",
+      "webpack": "^3.10.0"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-preset-es2015": "^6.24.1",
+      "chalk": "^2.4.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
